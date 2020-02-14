@@ -53,3 +53,26 @@ main {
 #h-top img {
     max-height:35vh;
 }
+
+#moon {
+    position: absolute;
+    bottom:0;
+    max-height:8vh;
+    width:100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: $black;
+    color:$light-gray;
+    margin-bottom:0;
+    padding:1rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer small {
+    color:$dark-gray;
+}

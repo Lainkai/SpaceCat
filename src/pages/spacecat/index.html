@@ -1,18 +1,18 @@
 <header data-sticky-container>
   <nav class="title-bar" data-sticky data-options="marginTop:0">
     <div class="title-bar-left">
-      <p><span class="title-bar-title">Space Cat</span></p>
+      <h4><span class="title-bar-title">Space Cat</span></h4>
     </div>
     <div class>
-      <ul class="menu">
-        <li><a href="">S</a></li>
-        <li><a href="">P</a></li>
-        <li><a href="">A</a></li>
-        <li><a href="">C</a></li>
-        <li><a href="">E</a></li>
-        <li><a href="">C</a></li>
-        <li><a href="">A</a></li>
-        <li><a href="">T</a></li>
+      <ul class="menu" data-magellan>
+        <li><a href="#speaker">S</a></li>
+        <li><a href="#purpose">P</a></li>
+        <li><a href="#audience">A</a></li>
+        <li><a href="#context">C</a></li>
+        <li><a href="#exigence">E</a></li>
+        <li><a href="#choices">C</a></li>
+        <li><a href="#appeals">A</a></li>
+        <li><a href="#tone">T</a></li>
       </ul>
     </div>
   </nav>
@@ -23,6 +23,7 @@
       <div>
         <div id="particles-js"></div>
       </div>
+      <img id="moon" src="{{root}}assets/img/moon.svg">
       <div id="h-container">
         <div id="h-top">
           <h1>Space Cat</h1>
@@ -30,17 +31,148 @@
         </div>
     </div>
   </section>
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam voluptatum quod voluptatibus et, cum quos quasi expedita, asperiores ipsum eum vero possimus odit nobis nesciunt ratione dicta sapiente, vitae recusandae!
-  </p>
+  <section class="grid-container">
+    <!--Why-->
+    <div class="grid-x grid-margin-x">
+      <div class="cell">
+        <h2>What is Space Cat?</h2>
+      </div>
+      <!--Paragraphs-->
+      <div class="cell medium-6">
+        <p>Space Cat is a mnemonic acronym for A.P. <abbr title="Language and Composition">Lang</abbr> Students to help them discover the composition
+        of a piece of writing. These questions can help students become better readers and writers.</p>
+      </div>
+      <!--The Image-->
+      <div class="cell medium-6">
+        <img src="{{root}}assets/img/Poster.png">
+      </div>
+    </div>
+    <hr>
+    <!--Speaker-->
+    <div class="grid-x grid-margin-x" id="speaker" data-magellan-target="speaker">
+      <div class="cell">
+        <h2>Speaker</h2>
+      </div>
+      <div class="cell">
+        <p>Asking youself who the speaker is can tell you a lot about the writing. The speaker
+          can give you insight into what kind of bias the piece has. The speaker can be the author,
+          but it can also be a character inside the book. For example, in <a href="baseballhall.org/discover-more/stories/baseball-history/lou-gehrig-luckiest-man" target="_blank">Lou Gehrig's speech</a>, he would be the speaker,
+          while in Harper Lee's <span style="font-style: italic;">To Kill a Mockingbird</span>, Scout Finch is the speaker.
+        </p>
+      </div>
+      <div class="cell medium-4">
+        <div class="callout success">
+          <blockquote>
+            “I have a dream that one day this nation will rise up and live out the true meaning of its creed — we hold these truths to be self-evident: that all men are created equal.”
+             <cite>Dr. Martin Luther King Jr.</cite>
+          </blockquote>
+          <p>The speaker is <abbr title="Dr. Martin Luther King Jr.">Dr. MLK</abbr>, while using the first person. He was the figurehead
+          to the American Civil Rights movement, and was known for his peaceful protesting.</p>
+        </div>
+      </div>
+      <div class="cell medium-4">
+        <div class="callout primary">
+          <blockquote>
+            "You never really understand a person until you consider things from his point of view . . . until you climb into
+            his skin and walk around in it." <cite>Harper Lee</cite>
+          </blockquote>
+          <p>The speaker is Atticus Finch, the charismatic lawyer who is Scouts father. He is known for his wisdom,
+            intelligence, and behavior, and everyone in Maycomb respects him.
+          </p>
+        </div>
+      </div>
+      <div class="cell medium-4">
+        <div class="callout warning">
+          <blockquote>
+            "It matters not what someone is born, but what they grow to be." <cite>J.K. Rowling</cite>
+          </blockquote>
+          <p>The speaker is Albus Dumbledore, the great wizard of the Harry Potter series.
+            He doesn't judge books by their cover, and welcomes all.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!--Purpose-->
+    <div class="grid-x grid-margin-x" id="purpose" data-magellan-target="purpose">
+      <div class="cell medium-6">
+        <h2>Purpose</h2>
+        <p>What is the author trying to do? I don't know! That is what you're supposed to figure out. There are three main points that an author can cover:
+          <ul>
+            <li><div class="callout">
+              <strong>To Persuade</strong>
+            </div></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <!--Audience-->
+    <div class="grid-x grid-margin-x" id="audience" data-magellan-target="audience">
+      <div class="cell">
+        <h2>Audience</h2>
+      </div>
+      <div class="cell">
+        <p>Who is the author writing to?</p>
+      </div>
+    </div>
+    <hr>
+    <!--Context-->
+    <div class="grid-x grid-margin-x" id="context" data-magellan-target="context">
+      <div class="cell">
+        <h2>Context</h2>
+      </div>
+      <div class="cell">
+        <p>Context paragraph</p>
+      </div>
+    </div>
+    <hr>
+    <!--Exigence-->
+    <div class="grid-x grid-margin-x" id="exigence" data-magellan-target="exigence">
+      <div class="cell">
+        <h2>Exigence</h2>
+      </div>
+      <div class="cell">
+        <p>Exigence Paragraph</p>
+      </div>
+    </div>
+    <hr>
+    <!--Choices-->
+    <div class="grid-x grid-margin-x" id="choices" data-magellan-target="choices">
+      <div class="cell">
+        <h2>Choices</h2>
+      </div>
+      <div class="cell">
+        <p>Choices Paragraph</p>
+      </div>
+    </div>
+    <hr>
+    <!--Appeals-->
+    <div class="grid-x grid-margin-x" id="appeals" data-magellan-target="appeals">
+      <div class="cell">
+        <h2>Appeals</h2>
+      </div>
+      <div class="cell">
+        <p>Appeals Paragraph</p>
+      </div>
+    </div>
+    <hr>
+    <!--Tone-->
+    <div class="grid-x grid-margin-x" id="tone" data-magellan-target="tone">
+      <div class="cell">
+        <h2>Tone</h2>
+      </div>
+      <div class="cell">
+        <p>Tone Paragraph</p>
+      </div>
+    </div>
+    <hr>
+  </section>
 </main>
+<footer>
+  <div style="text-align: center;">
+      <p>Jacob Armstrong 2020; For A.P. Language & Composition</p>
+      <small>Credit to the authors of artwork shown. Fair Use for Education</small>
+    </div>
+  </div>
+</footer>
