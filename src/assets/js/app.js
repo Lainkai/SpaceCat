@@ -14,7 +14,7 @@ require('particles.js')
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
-particlesJS.load('particles-js', '/assets/particles.json', function() {
+particlesJS.load('particles-js', '/SpaceCat/assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
 

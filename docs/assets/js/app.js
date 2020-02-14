@@ -25623,7 +25623,7 @@ __webpack_require__(/*! particles.js */ "./node_modules/particles.js/particles.j
 //import './lib/foundation-explicit-pieces';
 
 
-particlesJS.load('particles-js', '/assets/particles.json', function () {
+particlesJS.load('particles-js', '/SpaceCat/assets/particles.json', function () {
   console.log('callback - particles.js config loaded');
 });
 Object(animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_2__["default"])({
