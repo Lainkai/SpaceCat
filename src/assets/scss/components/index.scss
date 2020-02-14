@@ -1,10 +1,17 @@
 @include add-foundation-colors;
+@import url(https://fonts.googleapis.com/css?family=Orbitron:900|Sarpanch:900&display=swap);
+
+//font-family: 'Audiowide', cursive;
+//font-family: 'Bangers', cursive;
+//font-family: 'Orbitron', sans-serif;
+//font-family: 'Sarpanch', sans-serif;
 main {
     background-color: $white;
 }
 
 #hero {
     background-color: $primary-color;
+    z-index: 0;
     position: relative;
 }
 
@@ -23,11 +30,26 @@ main {
 }
 
 #h-container {
-    z-index: 10;
+    z-index: 8;
     left: -50%;
+    height: 80vh;
 }
 
 #h-top {
     position: relative;
     text-align: center;
+    padding-top: 2.5em;
+    
+}
+
+#h-top h1 {
+    font-family: 'Orbitron', cursive;
+    color: lighten($warning-color,45%);
+    text-shadow: 0px 0px 20px lighten($warning-color,70%);
+    font-size: 14vh;
+
+}
+
+#h-top img {
+    max-height:35vh;
 }
