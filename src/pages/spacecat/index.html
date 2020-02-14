@@ -1,7 +1,7 @@
 <header data-sticky-container>
   <nav class="title-bar" data-sticky data-options="marginTop:0">
     <div class="title-bar-left">
-      <h4><span class="title-bar-title">Space Cat</span></h4>
+      <h4 data-magellan><a href="#hero"><span class="title-bar-title">Space Cat</span></a></h4>
     </div>
     <div class>
       <ul class="menu" data-magellan>
@@ -19,7 +19,7 @@
 </header>
 
 <main>
-  <section id="hero">
+  <section id="hero" data-magellan-target="hero">
       <div>
         <div id="particles-js"></div>
       </div>
@@ -41,10 +41,11 @@
       <div class="cell medium-6">
         <p>Space Cat is a mnemonic acronym for A.P. <abbr title="Language and Composition">Lang</abbr> Students to help them discover the composition
         of a piece of writing. These questions can help students become better readers and writers.</p>
+        
       </div>
       <!--The Image-->
       <div class="cell medium-6">
-        <img src="{{root}}assets/img/Poster.png">
+        <img src="{{root}}assets/img/animatedCat.gif" class="float-center" style="max-height: 40vh;">
       </div>
     </div>
     <hr>
@@ -96,14 +97,45 @@
     <!--Purpose-->
     <div class="grid-x grid-margin-x" id="purpose" data-magellan-target="purpose">
       <div class="cell medium-6">
+        <img style="max-height:80vh;" src="{{root}}assets/img/authorsPurposePie.jpg">
+      </div>
+      <div class="cell medium-6">
         <h2>Purpose</h2>
-        <p>What is the author trying to do? I don't know! That is what you're supposed to figure out. There are three main points that an author can cover:
+        <p>What is the author trying to do? I don't know! That is what you're supposed to figure out. There are, but not limited to, three main points:
           <ul>
-            <li><div class="callout">
-              <strong>To Persuade</strong>
-            </div></li>
+            <li>
+              <div class="callout warning">
+                <strong>To Persuade</strong>
+                <p>The author is trying to get the audience to believe or do something.
+                  Advertisements easily fit into this category, for they are designed to entice
+                  customers, voters, or whatever group the author is trying to target. 
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="callout alternate">
+                <strong>To Inform</strong>
+                <p>They want to share you some juicy secrets! The author is going to use facts and information
+                  to help the audience gain information about a subject.</p>
+              </div>
+            </li>
+            <li>
+              <div class="callout success">
+                <strong>To Entertain</strong>
+                <p>Funny Joke! The author is trying to entertain the audience. The author can employ
+                  a variety of techniques to do so, but they are not limited to jokes. The author could be 
+                  recalling on his/her childhood, or he/she could be trying to fright his/her way into joy.
+                </p>
+              </div>
+            </li>
           </ul>
         </p>
+      </div>
+      <div class="cell">
+        <p>The author is not limited to these three examples, but that covers the gist.</p>
+        <div class="callout warning">
+          <strong>Do not confuse the purpose with rhetorical appeals!</strong>
+        </div>
       </div>
     </div>
     <hr>
@@ -115,6 +147,30 @@
       <div class="cell">
         <p>Who is the author writing to?</p>
       </div>
+      <div class="cell medium-4">
+        <img class="float-right" style="max-width: 20vw;;" src="{{root}}assets/img/onefish.gif">
+      </div>
+      <div class="cell medium-6">
+        <div class="grid-x">
+          <div class="cell">
+            <h4>Children?</h4>
+            <p>Doctor Seuss is famous for his childrens books, but would you want to read an entire
+              romantic novel in rhymes? I hope not.
+            </p>
+          </div>
+          <div class="cell medium-8">
+            <h4>Young Adults?</h4>
+            <p>Young adults different needs compared to children, so authors have to write
+              in a diffferent rhetoric in order to appeal to this audience.
+            </p>
+          </div>
+          <div class="cell medium-4">
+            <img src="{{root}}assets/img/jjbaExample.jpg">
+            <small>JoJo's Bizzare Adventure includes many references that young children may not understand.</small>
+          </div>
+        </div>
+      </div>
+      
     </div>
     <hr>
     <!--Context-->
@@ -123,7 +179,15 @@
         <h2>Context</h2>
       </div>
       <div class="cell">
-        <p>Context paragraph</p>
+        <p>What's up with the world? No. Seriously, what is going on with the world when the author was writing this? Think about
+          the time period, political affiliations, wars, and global events.
+        </p>
+        <div class="callout alternate">
+          <h4>Example</h4>
+          <p><span style="font-style: italic;">Fahrenheit 451</span> by Ray Bradbury was written in 1953. This is during the peak
+          of McCarthyism, where anyone who dissented upon the U.S. government was considered to be a 'communist' and ridiculed
+        by society.</p>
+        </div>
       </div>
     </div>
     <hr>
@@ -133,7 +197,9 @@
         <h2>Exigence</h2>
       </div>
       <div class="cell">
-        <p>Exigence Paragraph</p>
+        <p>Why would someone in their right mind would write an essay about ugly tourists? Clearly something had to make the author mad
+          or something.
+        </p>
       </div>
     </div>
     <hr>
@@ -143,7 +209,8 @@
         <h2>Choices</h2>
       </div>
       <div class="cell">
-        <p>Choices Paragraph</p>
+        <p>Why did the author choose this word to be here? What kind of rhetorical device did the author use in this sentence?
+        </p>
       </div>
     </div>
     <hr>
@@ -153,7 +220,12 @@
         <h2>Appeals</h2>
       </div>
       <div class="cell">
-        <p>Appeals Paragraph</p>
+        <p>Choose one or more of the following:</p>
+        <ul>
+          <li><p>Ethos - Why should I listen to this author? On whose authority?</p></li>
+          <li><p>Logos - Big brain! I like all the pretty numbers and statistics. Too bad I skimmed it.</p></li>
+          <li><p>Pathos - Pretty Please! With cherries on top? The use of feelings and emotions.🥺 </p></li>
+        </ul>
       </div>
     </div>
     <hr>
@@ -163,7 +235,8 @@
         <h2>Tone</h2>
       </div>
       <div class="cell">
-        <p>Tone Paragraph</p>
+        <p>This is the authors attitude to a subject.<blockquote> I am mad that it is 2:15 A.M. on Valentines day. <cite>Jake</cite></blockquote></p>
+        <p>His tone is tired because he can't think to put anything else down.</p>
       </div>
     </div>
     <hr>

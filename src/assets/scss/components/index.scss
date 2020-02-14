@@ -76,3 +76,9 @@ footer p {
 footer small {
     color:$dark-gray;
 }
+
+.title-bar-title {
+    font-family: 'Orbitron', cursive;
+    text-shadow: 0px 0px 20px lighten($warning-color,70%);
+    color: lighten($warning-color,45%);
+}
